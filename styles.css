@@ -1,0 +1,174 @@
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: lightsalmon;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 1050px) {
+    body {
+        min-width: 950px;
+    }
+}
+
+/* Header */
+
+.nav {
+    display: flex;
+    background-color: teal;
+    height: 2rem;
+    padding-top: 1.4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: lightsalmon;
+    padding: 0 2rem;
+    font-size: 1rem;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0.5, 0.5, 0.5, 0.5);
+    height: 5rem;
+    margin: 11rem 0;
+    padding: 1.1rem 0;
+}
+
+.title p {
+    color: coral;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Intro */
+
+.intro {
+    padding: 4rem 1rem;
+    margin-top: 1rem;
+    line-height: 1.5rem;
+}
+
+.intro h2{
+    color: yellow;
+    font-size: 1.5rem;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+}
+
+.intro .second, .third {
+    color: white;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+    font-size: 1.3rem;
+}
+
+.intro a {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.intro a:visited {
+    color: blueviolet;
+}
+
+@media only screen and (max-width: 1050px) {
+    .intro {
+        width: 100%;
+    }
+}
+
+/* Photos section1 & section2*/
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#image-container {
+    max-width: 30%;
+    min-width: 333px;
+    margin: 1.5%;
+}
+
+img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 1050px) {
+    .photos {
+        flex-direction: column;
+    }
+
+    #image-container {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Testimonial */
+
+#testimonial {
+    background-color: teal;
+    color: yellow;
+    height: 20rem;
+    margin: 4rem 0; 
+    padding: 0 1rem;
+    padding-top: 1rem;
+}
+
+#testimonial h1 {
+    font-size: 2.5rem;
+    margin-block-start: 1.5rem;
+    margin-block-end: 1.5rem;
+    line-height: 3rem;
+}
+
+#testimonial p {
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+}
+
+
+/* Call */
+
+#call {
+    margin: 4rem 0;
+    margin-block-end: 0;
+    color: yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#call h1 {
+    margin: 1.4rem 0;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#call img {
+    width: 50%;
+}
+
+/* Footer */
+
+#footer nav {
+   height: 1.5rem;
+}
+  
